@@ -1,0 +1,25 @@
+<main>
+  <section class="container">
+    <div *ngFor="let data of contactData">
+      <h1 class="mt-5 text-center contact-heading">
+        {{ data.title | uppercase }}
+      </h1>
+      <div class="contact-textContainer">
+        <p>{{ data.Contacttext }}</p>
+        <ul>
+          <li>{{ data.detail1 }}</li>
+          <li>{{ data.detail2 }}</li>
+          <li>{{ data.detail3 }}</li>
+        </ul>
+      </div>
+      <h2 class="mt-5 text-center contact-heading">
+        {{ data.Heading2 | uppercase }}
+      </h2>
+      <p>{{ data.helpText }}</p>
+      <div class="contact-infoContainer d-flex justify-content-around">
+        <a [href]="'tel:' + data.phone">Call</a>
+        <a [href]="'mail:' + data.email">Email</a>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,13 @@
+<main>
+  <section class="container">
+    <h1 class="mt-5 text-center aboutUs-headign">ABOUT US</h1>
+    <div *ngFor="let aboutUs of aboutUsData">
+      <h2 class="mt-5 aboutUs-headign">{{ aboutUs.heading }}</h2>
+      <ul>
+        <li>{{ aboutUs.Desc1 }}</li>
+        <li>{{ aboutUs.Desc2 }}</li>
+        <li>{{ aboutUs.Desc3 }}</li>
+      </ul>
+    </div>
+  </section>
+</main>
