@@ -1,8 +1,11 @@
 <main>
   <section class="container">
     <h3 class="mt-5 text-center products-headeing">PRODUCTS</h3>
-    <div class="row">
-      <div *ngIf="product.id" class="mt-5 col-sm-12 col-md-4 col-lg-4">
+    <div class="row justify-content-center">
+      <div
+        *ngIf="product.id"
+        class="mt-5 col-sm-12 col-md-4 col-lg-4 text-center"
+      >
         <div class="products-item">
           <img [src]="product.image" [alt]="product.name" />
         </div>
