@@ -1,0 +1,14 @@
+<main>
+  <section class="container">
+    <h3 class="mt-5 text-center products-headeing">PRODUCTS</h3>
+    <div class="row">
+      <div *ngIf="product.id" class="mt-5 col-sm-12 col-md-4 col-lg-4">
+        <div class="products-item">
+          <img [src]="product.image" [alt]="product.name" />
+        </div>
+        <h2 class="mt-3 products-item-title">{{ product.name | titlecase }}</h2>
+        <p class="products-item-price">{{ product.price | currency: "CAD" }}</p>
+      </div>
+    </div>
+  </section>
+</main>
